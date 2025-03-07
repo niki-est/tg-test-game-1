@@ -16,6 +16,7 @@ canvas {
   image-rendering: pixelated;
   background: url('welcome.png') no-repeat center center fixed;
   background-size: contain;
+  background-attachment: local;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 100%;
   max-width: 400px; /* Максимальная ширина */
