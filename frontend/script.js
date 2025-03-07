@@ -8,7 +8,7 @@ canvas.height = 300;
 ctx.font = "16px Arial";
 ctx.textAlign = "center"; // Центрируем текст
 ctx.fillText("Сцена 1: Ты стоишь перед военкоматом.", canvas.width / 2, 50);
-ctx.fillText("Что делать?", canvas.width / 2, 80);
+ctx.fillText("Твои действия?", canvas.width / 2, 80);
 
 const modal = document.getElementById("modal");
 const modalText = document.getElementById("modal-text");
@@ -19,7 +19,7 @@ function chooseOption(choice) {
   if (choice === "run") {
     modalText.innerText = "Ты решил бежать! Удачи!";
   } else if (choice === "hide") {
-    modalText.innerText = "Ты спрятался. Надеюсь, тебя не найдут!";
+    modalText.innerText = "Ты спрятался. Но они найдут тебя!";
   }
 }
 
