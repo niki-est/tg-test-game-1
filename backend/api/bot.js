@@ -15,7 +15,7 @@ bot.command("start", (ctx) => {
 
 // Обработка данных от игры
 bot.on("callback_query", (ctx) => {
-  if (ctx.callbackQuery.game_short_name === "ArmyEscape") {
+  if (ctx.callbackQuery.game_short_name === "army_club") {
     // Игрок нажал "Играть" — Telegram откроет игру
   }
   if (ctx.callbackQuery.data) {
