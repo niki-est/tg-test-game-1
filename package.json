@@ -5,7 +5,7 @@
     "telegraf": "^4.16.3"
   },
   "scripts": {
-    "start": "node backend/api/bot.js"
+    "start": "node api/bot.js"
   }
 }
 
