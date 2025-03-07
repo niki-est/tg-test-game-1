@@ -4,15 +4,25 @@ ctx.font = "16px Arial";
 ctx.fillText("Сцена 1: Ты стоишь перед военкоматом.", 20, 50);
 ctx.fillText("Что делать?", 20, 80);
 
+const modal = document.getElementById("modal");
+const modalText = document.getElementById("modal-text");
+const closeBtn = document.getElementsByClassName("close")[0];
+
 function chooseOption(choice) {
-  if (window.TelegramGameProxy) {
-    TelegramGameProxy.sendMessage(choice);
-  } else {
-    console.log("Выбор:", choice);
+  modal.style.display = "block";
+  if (choice === "run") {
+    modalText.innerText = "Ты решил бежать! Удачи!";
+  } else if (choice === "hide") {
+    modalText.innerText = "Ты спрятался. Надеюсь, тебя не найдут!";
   }
 }
 
-if (window.TelegramGameProxy) {
-  TelegramGameProxy.init();
-  console.log("Telegram Game Proxy initialized");
-}
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
