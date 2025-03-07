@@ -1,5 +1,5 @@
 {
-  "name": "army-escape",
+  "name": "army_club",
   "version": "1.0.0",
   "dependencies": {
     "telegraf": "^4.16.3"
