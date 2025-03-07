@@ -12,10 +12,10 @@ body {
 }
 
 canvas {
-  border: 18px solid #333;
+  border: 12px solid #333;
   image-rendering: pixelated;
   background: url('welcome.png') no-repeat center center fixed;
-  background-size: cover;
+  background-size: contain;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 100%;
   max-width: 400px; /* Максимальная ширина */
@@ -85,5 +85,21 @@ button:hover {
   }
   .modal-content {
     margin: 40% auto; /* Чуть ниже на маленьких экранах */
+  }
+}
+
+.scene-description {
+  margin: 10px 0;
+  text-align: center;
+}
+.scene-description p {
+  font-size: 20px; /* Крупнее текст */
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 5px 0;
+}
+@media (max-width: 600px) {
+  .scene-description p {
+    font-size: 16px; /* Чуть меньше на телефонах */
   }
 }

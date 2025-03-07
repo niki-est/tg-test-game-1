@@ -5,11 +5,6 @@ const ctx = canvas.getContext("2d");
 canvas.width = 400;
 canvas.height = 300;
 
-ctx.font = "16px Arial";
-ctx.textAlign = "center"; // Центрируем текст
-ctx.fillText("Сцена 1: Ты стоишь перед военкоматом.", canvas.width / 2, 50);
-ctx.fillText("Твои действия?", canvas.width / 2, 80);
-
 const modal = document.getElementById("modal");
 const modalText = document.getElementById("modal-text");
 const closeBtn = document.getElementsByClassName("close")[0];
