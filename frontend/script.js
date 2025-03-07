@@ -1,8 +1,14 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
+
+// Адаптируем размеры Canvas к разрешению
+canvas.width = 400;
+canvas.height = 300;
+
 ctx.font = "16px Arial";
-ctx.fillText("Сцена 1: Ты стоишь перед военкоматом.", 20, 50);
-ctx.fillText("Что делать?", 20, 80);
+ctx.textAlign = "center"; // Центрируем текст
+ctx.fillText("Сцена 1: Ты стоишь перед военкоматом.", canvas.width / 2, 50);
+ctx.fillText("Что делать?", canvas.width / 2, 80);
 
 const modal = document.getElementById("modal");
 const modalText = document.getElementById("modal-text");
