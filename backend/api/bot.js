@@ -7,7 +7,7 @@ bot.command("start", (ctx) => {
   ctx.reply("Готов сбежать от армии?", {
     reply_markup: {
       inline_keyboard: [
-        [{ text: "Играть", callback_game: "ArmyEscape" }],
+        [{ text: "Играть", callback_game: "army_club" }],
       ],
     },
   });
