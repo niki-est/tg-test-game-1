@@ -24,7 +24,11 @@ bot.on("callback_query", (ctx) => {
 });
 
 module.exports = async (req, res) => {
-  console.log("Request body:", JSON.stringify(req.body, null, 2));
+  console.log("Request method:", req.method, "Body:", JSON.stringify(req.body, null, 2));
+  if (req.method === "GET") {
+    res.status(200).send("Bot endpoint - use POST for updates");
+    return;
+  }
   if (!req.body) {
     console.log("No body received");
     res.status(400).send("No body");
