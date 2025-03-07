@@ -1,12 +1,6 @@
-import express from "express";
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.get("/api/hello", (req, res) => {
-    res.json({ message: "Привет, это твой API на Vercel!" });
-});
-
-app.listen(PORT, () => {
-    console.log(`Сервер запущен на http://localhost:${PORT}`);
-});
+export default function handler(req, res) {
+  // Это чистая Vercel Serverless Function
+  return res.status(200).json({
+    message: "Привет, это твоя serverless-функция на Vercel!",
+  });
+}

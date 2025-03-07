@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node api/hello.js"
+    "start": "echo \"No start script needed for Vercel Serverless\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2"
+   
   },
   "description": ""
 }
