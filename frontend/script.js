@@ -1,7 +1,5 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
-
-// Адаптируем размеры Canvas к разрешению
 canvas.width = 400;
 canvas.height = 300;
 
@@ -14,7 +12,7 @@ function chooseOption(choice) {
   if (choice === "run") {
     modalText.innerText = "Ты решил бежать! Удачи!";
   } else if (choice === "hide") {
-    modalText.innerText = "Ты спрятался. Но они найдут тебя!";
+    modalText.innerText = "Ты спрятался. Надеюсь, тебя не найдут!";
   }
 }
 
